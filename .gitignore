@@ -3,8 +3,6 @@ venv/
 .env
 *.env
 
-# Archivos de configuración o claves
-config.py
 instance/
 __pycache__/
 
