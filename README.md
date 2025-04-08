@@ -1,5 +1,4 @@
-# Weather Alert Service 
-
+# 🌦️ Weather Alert Service
 Este proyecto es un servicio REST desarrollado con Flask que consulta el pronóstico del clima para una ubicación específica y envía alertas por correo electrónico si se detectan condiciones meteorológicas adversas.
 
 ## 🗂️ Estructura del Proyecto
@@ -25,15 +24,17 @@ Este proyecto es un servicio REST desarrollado con Flask que consulta el pronós
 - -  test_weather_service.py
 - -  test_notification_service.py
 
-## Características 
+## ✨ Características
 
 - Consulta la API de [WeatherAPI](https://www.weatherapi.com/) para obtener el clima.
 - Detecta condiciones climáticas adversas como tormentas, nieve o niebla.
 - Envía notificaciones por correo electrónico a los usuarios afectados.
 - Registra las notificaciones en una base de datos SQLite.
 - Seguridad mediante API Key.
+- Documentación dinámica y visual usando Swagger (OpenAPI).
+- Pruebas unitarias con Pytest para asegurar calidad y estabilidad.
 
-## Tecnologías 
+## 🛠️ Tecnologías 
 
 - Python 3.10+
 - Flask
@@ -41,8 +42,10 @@ Este proyecto es un servicio REST desarrollado con Flask que consulta el pronós
 - requests
 - smtplib
 - SQLite
+- flasgger para generar documentación Swagger
+- pytest para pruebas unitarias
 
-## Configuración 
+## ⚙️ Configuración 
 
 ### Variables de entorno (`.env`)
 Debes crear un archivo `.env` con las siguientes variables:
@@ -56,26 +59,28 @@ Debes crear un archivo `.env` con las siguientes variables:
 - MAIL_PASSWORD=Clave_de_la_aplicacion_de_GMail
 - MAIL_USE_TLS=True
 
-## Instalar dependencias 
+## 🚀 Instrucciones
+### Instalar dependencias 
 pip install -r requirements.txt
 
-## Correr pruebas unitarias 
+### Correr pruebas unitarias 
 pytest tests -v
 
-## Correr Aplicación 
+### Correr Aplicación 
 python app.py
 
-## Documentación local Swagger (Aquí esta todo para saber como funcionan los endpoint)
-http://localhost:5000/apidocs/
+## 📑 Documentación de la API (Swagger)
+Utilizamos Swagger a través de la librería flasgger para generar automáticamente la documentación de los endpoints, facilitando pruebas, visualización y entendimiento del API.
 
-## Aplicación en AWS funcional Producción
-API_KEY=milton_1234 << -- Con esta clave el endpoint de producción te funcionara
+- Local: http://localhost:5000/apidocs/
 
-- Servicio desplegado en Render:
-Render es una plataforma de Cloud Hosting (alojamiento en la nube) como AWS, GCP, o Heroku.
+- Producción (Render):
+🔐 API Key: milton_1234
+🌐 URL: https://weatherapi-x181.onrender.com/apidocs/
 
-- Api 
-https://weatherapi-x181.onrender.com/apidocs/
+
+## ☁️ Despliegue en la nube
+Este proyecto está desplegado en Render, una plataforma de Cloud Hosting similar a AWS, GCP o Heroku, que permite alojar y escalar aplicaciones fácilmente.
 
 
 ## 👨‍💻 Autor
