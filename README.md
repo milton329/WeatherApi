@@ -2,6 +2,29 @@
 
 Este proyecto es un servicio REST desarrollado con Flask que consulta el pronóstico del clima para una ubicación específica y envía alertas por correo electrónico si se detectan condiciones meteorológicas adversas.
 
+## 🗂️ Estructura del Proyecto
+
+- app.py
+- config.py
+- routes.py
+- weather_alerts.db
+- requirements.txt
+- .env
+- .gitignore
+- README.md
+- models/
+- -  forecast.py
+- -  notification.py
+-  services/
+- -  weather_service.py
+- -  notification_service.py
+-  utils/
+- -  exceptions.py
+- -  middlewares.py
+- tests/
+- -  test_weather_service.py
+- -  test_notification_service.py
+
 ## Características 
 
 - Consulta la API de [WeatherAPI](https://www.weatherapi.com/) para obtener el clima.
@@ -46,32 +69,14 @@ python app.py
 http://localhost:5000/apidocs/
 
 ## Aplicación en AWS funcional Producción
-API_KEY=milton_1234
+API_KEY=milton_1234 << -- Con esta clave el endpoint de producción te funcionara
 
-http://localhost:5000/apidocs/
+- Servicio desplegado en Render:
+Render es una plataforma de Cloud Hosting (alojamiento en la nube) como AWS, GCP, o Heroku.
 
-## 🗂️ Estructura del Proyecto
+- Api 
+https://weatherapi-x181.onrender.com/apidocs/
 
-- app.py
-- config.py
-- routes.py
-- weather_alerts.db
-- requirements.txt
-- .env
-- .gitignore
-- README.md
-- models/
-- -  forecast.py
-- -  notification.py
--  services/
-- -  weather_service.py
-- -  notification_service.py
--  utils/
-- -  exceptions.py
-- -  middlewares.py
-- tests/
-- -  test_weather_service.py
-- -  test_notification_service.py
 
 ## 👨‍💻 Autor
 Milton Jaramillo
