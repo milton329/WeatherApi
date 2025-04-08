@@ -1,0 +1,49 @@
+# Entorno virtual
+venv/
+.env
+*.env
+
+# Archivos de configuración o claves
+config.py
+instance/
+__pycache__/
+
+# Archivos temporales o del sistema
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.pot
+*.mo
+
+# Archivos de tests
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Archivos de IDEs
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# PyInstaller
+*.spec
+dist/
+build/
+
+# Logs y resultados
+logs/
+*.log
+
+# Archivos de Jupyter Notebook (si aplica)
+.ipynb_checkpoints/
