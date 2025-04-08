@@ -16,6 +16,8 @@ from utils.exceptions import WeatherAPIException
 from models.forecast import Forecast
 from models.notification import Notification
 from datetime import datetime
+from utils.weather_translations import translate_condition_by_code
+
 
 class WeatherAlertService:
     """
@@ -97,9 +99,10 @@ class WeatherAlertService:
         )
 
     def _send_email_alert(self, to_email, forecast):
+        condition_es = translate_condition_by_code(forecast.code)
         msg = MIMEText(
             f"Hola!\n\nTenemos programada la entrega de tu paquete para mañana, "
-            f"y se espera un clima con '{forecast.condition}' en tu ubicación. "
+            f"y se espera un clima con {condition_es} en tu ubicación. "
             "Es posible que tengamos retrasos. Haremos todo lo posible para cumplir con tu entrega.\n\n"
             f"Fecha del clima: {forecast.date}"
         )

@@ -1,0 +1,51 @@
+# utils/weather_translations.py
+
+WEATHER_CONDITIONS_ES = {
+    1063: "Posibilidad de lluvia",
+    1066: "Nieve ligera",
+    1069: "Aguanieve ligera",
+    1072: "Llovizna helada ligera",
+    1087: "Tormentas eléctricas aisladas",
+    1114: "Nieve arrastrada por el viento",
+    1117: "Tormenta de nieve severa",
+    1135: "Niebla",
+    1147: "Niebla helada",
+    1150: "Llovizna ligera",
+    1153: "Llovizna",
+    1168: "Llovizna helada",
+    1171: "Llovizna helada intensa",
+    1180: "Lluvia ligera con intervalos soleados",
+    1183: "Lluvia ligera",
+    1186: "Lluvia moderada con intervalos soleados",
+    1189: "Lluvia moderada",
+    1192: "Lluvia fuerte con intervalos soleados",
+    1195: "Lluvia fuerte",
+    1198: "Lluvia helada ligera",
+    1201: "Lluvia helada intensa",
+    1204: "Aguanieve ligera",
+    1207: "Aguanieve intensa",
+    1210: "Nieve ligera con intervalos soleados",
+    1213: "Nieve ligera",
+    1216: "Nieve moderada con intervalos soleados",
+    1219: "Nieve moderada",
+    1222: "Nieve fuerte con intervalos soleados",
+    1225: "Nieve fuerte",
+    1237: "Granizo",
+    1240: "Lluvias dispersas",
+    1243: "Chubascos moderados",
+    1246: "Chubascos intensos",
+    1249: "Aguanieve dispersa",
+    1252: "Aguanieve intensa",
+    1255: "Nieve dispersa",
+    1258: "Nieve intensa dispersa",
+    1261: "Granizo disperso",
+    1264: "Granizo intenso disperso",
+    1273: "Tormentas dispersas con lluvia",
+    1276: "Tormentas intensas dispersas con lluvia",
+    1279: "Tormentas dispersas con nieve",
+    1282: "Tormentas intensas dispersas con nieve"
+}
+
+def translate_condition_by_code(code: int) -> str:
+    return WEATHER_CONDITIONS_ES.get(code, "Condición climática adversa")
+
