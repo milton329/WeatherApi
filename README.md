@@ -29,8 +29,8 @@ WEATHER_API_URL=http://api.weatherapi.com/v1/forecast.json
 WEATHER_DAYS=2
 MAIL_SERVER=smtp.gmail.com
 MAIL_PORT=587
-MAIL_USERNAME='Correo para el envio de notificaciones'
-MAIL_PASSWORD='Clave de la aplicación de GMail'
+MAIL_USERNAME=Correo_para_el_envio de_notificaciones
+MAIL_PASSWORD=Clave_de_la_aplicacion_de GMail
 MAIL_USE_TLS=True
 
 ## Instalar dependencias ---------------------------------
