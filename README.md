@@ -50,3 +50,29 @@ API_KEY=milton_1234
 
 http://localhost:5000/apidocs/
 
+## 🗂️ Estructura del Proyecto
+.
+├── app.py
+├── config.py
+├── routes.py
+├── weather_alerts.db
+├── requirements.txt
+├── .env
+├── .gitignore
+├── README.md
+├── models/
+│   ├── forecast.py
+│   └── notification.py
+├── services/
+│   ├── weather_service.py
+│   └── notification_service.py
+├── utils/
+│   ├── exceptions.py
+│   └── middlewares.py
+└── tests/
+    ├── test_weather_service.py
+    └── test_notification_service.py
+
+👨‍💻 Autor
+Milton Jaramillo
+Desarrollador Full Stack
