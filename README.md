@@ -23,15 +23,15 @@ Este proyecto es un servicio REST desarrollado con Flask que consulta el pronós
 
 ## Variables de entorno (`.env`)
 Debes crear un archivo `.env` con las siguientes variables:
-API_KEY=milton_1234
-WEATHER_API_KEY=83b7c8c1fa89489fa81224129240506
-WEATHER_API_URL=http://api.weatherapi.com/v1/forecast.json
-WEATHER_DAYS=2
-MAIL_SERVER=smtp.gmail.com
-MAIL_PORT=587
-MAIL_USERNAME=Correo_para_el_envio_de_notificaciones
-MAIL_PASSWORD=Clave_de_la_aplicacion_de_GMail
-MAIL_USE_TLS=True
+- API_KEY=milton_1234
+- WEATHER_API_KEY=83b7c8c1fa89489fa81224129240506
+- WEATHER_API_URL=http://api.weatherapi.com/v1/forecast.json
+- WEATHER_DAYS=2
+- MAIL_SERVER=smtp.gmail.com
+- MAIL_PORT=587
+- MAIL_USERNAME=Correo_para_el_envio_de_notificaciones
+- MAIL_PASSWORD=Clave_de_la_aplicacion_de_GMail
+- MAIL_USE_TLS=True
 
 ## Instalar dependencias ---------------------------------
 pip install -r requirements.txt
@@ -42,6 +42,11 @@ pytest tests -v
 ## Correr Aplicación -------------------------------------
 python app.py
 
-## Documentación Swagger (Aquí esta todo para saber como funcionan los endpoint)
+## Documentación local Swagger (Aquí esta todo para saber como funcionan los endpoint)
+http://localhost:5000/apidocs/
+
+## Aplicación en AWS funcional Producción
+API_KEY=milton_1234
+
 http://localhost:5000/apidocs/
 
