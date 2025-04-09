@@ -95,6 +95,16 @@ Gracias al uso de código limpio y una arquitectura desacoplada, cualquier cambi
 - Las capas están organizadas y desacopladas para permitir pruebas unitarias e integración automatizadas.
 - Se pueden simular distintos escenarios meteorológicos (normales o extremos) sin depender de servicios externos reales.
 
+## 🧩 Integración con Soluciones Mayores
+
+Este componente fue diseñado con enfoque modular y desacoplado, lo que facilita su integración en ecosistemas de software más grandes.
+
+### 🔄 ¿Qué se hizo para permitir una integración limpia?
+
+- **Separación clara de responsabilidades**: Cada capa (dominio, infraestructura, aplicación) tiene su rol bien definido, facilitando la reutilización.
+- **Inyección de dependencias**: Permite integrar otros servicios, como autenticación, logs centralizados o APIs externas sin modificar la lógica base.
+- **Estándares y buenas prácticas de desarrollo**: Se siguieron convenciones de codificación limpias, lo cual facilita que otros equipos entiendan y extiendan el componente.
+
 
 ## 👨‍💻 Autor
 Milton Jaramillo
