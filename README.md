@@ -82,6 +82,19 @@ Utilizamos Swagger a través de la librería flasgger para generar automáticame
 ## ☁️ Despliegue en la nube
 Este proyecto está desplegado en Render, una plataforma de Cloud Hosting similar a AWS, GCP o Heroku, que permite alojar y escalar aplicaciones fácilmente.
 
+## 🔧 Mantenibilidad del Componente
+
+### ✅ Alta mantenibilidad
+Gracias al uso de código limpio y una arquitectura desacoplada, cualquier cambio en las fuentes de datos, lógica de alertas o medios de notificación puede realizarse de forma segura y controlada, sin afectar el resto del sistema.
+
+### 🧱 Escalabilidad modular
+- Se pueden agregar nuevos tipos de alertas fácilmente, como contaminación ambiental o actividad sísmica.
+- Es posible integrar nuevos canales de notificación como correo electrónico, SMS o notificaciones push sin alterar la lógica central.
+
+### 🧪 Testeo facilitado
+- Las capas están organizadas y desacopladas para permitir pruebas unitarias e integración automatizadas.
+- Se pueden simular distintos escenarios meteorológicos (normales o extremos) sin depender de servicios externos reales.
+
 
 ## 👨‍💻 Autor
 Milton Jaramillo
